@@ -6,6 +6,7 @@ import Login from './auth/login.js'
 import AdminLogin from './auth/admin.js'
 import User from './user/index.js'
 import Admin from './admin/index.js'
+import AdminUsersAdd from './admin/add.js'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Switch>
           <Route path ="/user" component={User} />
           <Route path ="/admin/login" component={AdminLogin} />
+          <Route path ="/admin/users/add" component={AdminUsersAdd} />
           <Route path ="/admin" component={Admin} />
           <Route path ="/" component={Login} />
         </Switch>
